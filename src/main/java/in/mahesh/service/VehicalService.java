@@ -1,4 +1,4 @@
-package in.ashokit.service;
+package in.mahesh.service;
 
 import java.util.Arrays;
 import java.util.List;
@@ -9,9 +9,9 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.validation.annotation.Validated;
 
-import in.ashokit.binding.VehicalBinding;
-import in.ashokit.entity.VehicalEntity;
-import in.ashokit.repo.VehicalRepository;
+import in.mahesh.binding.VehicalBinding;
+import in.mahesh.entity.VehicalEntity;
+import in.mahesh.repo.VehicalRepository;
 
 @Service
 public class VehicalService {

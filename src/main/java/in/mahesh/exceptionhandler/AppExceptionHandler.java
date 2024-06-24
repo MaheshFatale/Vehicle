@@ -1,4 +1,4 @@
-package in.ashokit.exceptionhandler;
+package in.mahesh.exceptionhandler;
 
 import org.slf4j.LoggerFactory;
 //import org.hibernate.validator.internal.util.logging.LoggerFactory;

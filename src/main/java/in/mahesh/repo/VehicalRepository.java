@@ -1,8 +1,8 @@
-package in.ashokit.repo;
+package in.mahesh.repo;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 
-import in.ashokit.entity.VehicalEntity;
+import in.mahesh.entity.VehicalEntity;
 
 public interface VehicalRepository extends JpaRepository<VehicalEntity, Integer> {
 	

@@ -1,4 +1,4 @@
-package in.ashokit.controller;
+package in.mahesh.controller;
 
 import java.util.Optional;
 
@@ -12,10 +12,10 @@ import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
-import in.ashokit.binding.VehicalBinding;
-import in.ashokit.entity.VehicalEntity;
-import in.ashokit.repo.VehicalRepository;
-import in.ashokit.service.VehicalService;
+import in.mahesh.binding.VehicalBinding;
+import in.mahesh.entity.VehicalEntity;
+import in.mahesh.repo.VehicalRepository;
+import in.mahesh.service.VehicalService;
 import jakarta.persistence.metamodel.StaticMetamodel;
 
 @Controller
@@ -42,13 +42,8 @@ public class VehicalController {
 	}
 	
 	@PostMapping("/save")
-	public String handleSave(@Validated @ModelAttribute("vehicalbind") VehicalBinding vb,BindingResult result, Model model)
+	public String handleSave( @ModelAttribute("vehicalbind") VehicalBinding vb, Model model)
 	{
-		if(result.hasErrors())
-		{
-			return "FillInfo";
-		}
-		
 		boolean b=ss.saveVehical(vb);
 		if(b)
 		model.addAttribute("msg", "Saveed Vehical Information");
